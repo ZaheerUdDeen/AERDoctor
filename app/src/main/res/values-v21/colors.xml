@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3F51B5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#f79321</color>
+    <color name="halfWhite">#f2f4f3</color>
+    <color name="white">#ffffff</color>
+    <color name="iron">#669999</color>
+
+    <color name="blue">#42adf4</color>
+
+    <color name="material_login_login_color">#f79321</color>
+    <color name="material_login_register_color">#2b579a</color>
+    <color name="material_login_login_error_color">#ffbebe</color>
+    <color name="material_login_register_error_color">#600002</color>
+
+    <color name="primary_dark">#001f39</color>
+    <color name="primary_darker">#001323</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+
+
+
+</resources>

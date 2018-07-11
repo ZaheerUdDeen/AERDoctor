@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="scrapingsoft.aer_doctor.EndConsultation"
+    tools:showIn="@layout/activity_consulation">
+
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:hint="Patiant Name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ilnessDesc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_below="@+id/pName"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:hint="Illness Description" />
+
+    <TextView
+        android:id="@+id/cid"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/pName"
+        android:layout_alignRight="@+id/pName"
+        android:layout_below="@+id/ilnessDesc"
+        android:gravity="center"
+        android:hint="MBBS,FCPS"
+        android:textStyle="bold" />
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cid"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/customborder" />
+
+
+    <Button
+        android:id="@+id/startConsultation"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Send Consultation"
+        android:background="@color/blue"
+         />
+
+    <RadioButton
+        android:id="@+id/medReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cid"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:text="Med Req" />
+
+    <RadioButton
+        android:id="@+id/vsitHos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medReq"
+        android:layout_alignBottom="@+id/medReq"
+        android:layout_centerHorizontal="true"
+        android:text="Visit Hospital" />
+
+    <RadioButton
+        android:id="@+id/testReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vsitHos"
+        android:layout_alignBottom="@+id/vsitHos"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/vsitHos"
+        android:layout_toRightOf="@+id/vsitHos"
+        android:text="Test Req" />
+
+    <TextView
+
+        android:layout_width="249dp"
+        android:layout_height="30dp"
+
+        android:layout_alignLeft="@+id/medReq"
+
+        android:layout_alignStart="@+id/medReq"
+        android:layout_below="@+id/medReq"
+        android:layout_marginTop="12dp"
+
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        android:hint="Message"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/medReq"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="@color/base"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:id="@+id/drugTview"
+        android:layout_alignLeft="@+id/medReq"
+
+        android:layout_alignStart="@+id/medReq"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        android:hint="Drugs:"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/drug"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drugTview"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="@color/base"
+        android:ems="10"
+        android:hint="Drug Name"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/drugMg"
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+        android:hint="Usage Detatil"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drug"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="@color/base"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/drugDosage"
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drugMg"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="@color/base"
+        android:ems="10"
+        android:hint="Drug Dosage Form"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>
